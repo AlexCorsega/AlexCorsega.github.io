@@ -406,8 +406,9 @@ ul { list-style: none; }
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero__grid { grid-template-columns: 1fr; gap: 44px; }
+  .hero__content, .hero__card { min-width: 0; }
   .hero__card { order: -1; }
-  .code-card { transform: none; max-width: 400px; }
+  .code-card { transform: none; max-width: 100%; }
   .about__grid { grid-template-columns: 1fr; gap: 34px; }
   .skills__grid, .projects__grid { grid-template-columns: 1fr; }
   .hero__stats { grid-template-columns: repeat(2, 1fr); gap: 24px; }
@@ -431,6 +432,8 @@ ul { list-style: none; }
 
 @media (max-width: 480px) {
   .hero { padding: 130px 0 50px; }
+  .hero__title { font-size: clamp(2.2rem, 11vw, 3rem); }
+  .code-card__body { font-size: 0.74rem; padding: 18px 16px 22px; line-height: 1.7; }
   .hero__stats { grid-template-columns: 1fr 1fr; padding: 22px; }
   .stat__num { font-size: 2rem; }
   .section { padding: 70px 0; }
