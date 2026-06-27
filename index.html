@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex D. Corsega Jr. — System &amp; Web Developer</title>
+  <meta name="description" content="Alex D. Corsega Jr. — Full Stack Web Developer specializing in C#, ASP.NET Core, Blazor, .NET MAUI, and Azure. Building production-grade systems end to end." />
+  <meta name="author" content="Alex D. Corsega Jr." />
+
+  <meta property="og:title" content="Alex D. Corsega Jr. — System &amp; Web Developer" />
+  <meta property="og:description" content="Full Stack Web Developer specializing in C#, ASP.NET Core, Blazor, .NET MAUI, and Azure." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='monospace'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">AC<span class="nav__brand-dot">.</span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="projects.html" data-page="projects">Projects</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn btn--sm btn--primary nav__cta">Let's talk</a>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid reveal">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span class="status-dot"></span> Available for opportunities
+          </p>
+          <h1 class="hero__title">
+            Alex&nbsp;D. <span class="grad-text">Corsega</span> Jr.
+          </h1>
+          <p class="hero__role">System &amp; Web Developer</p>
+          <p class="hero__lede">
+            I build production-grade systems end to end — from database design and REST APIs
+            to polished front-end interfaces. Currently the sole developer behind
+            <strong>Logicim's</strong> public platform, shipping with C#, ASP.NET Core, Blazor &amp; Azure.
+          </p>
+          <div class="hero__cta">
+            <a href="projects.html" class="btn btn--primary">View my work</a>
+            <a href="contact.html" class="btn btn--ghost">Get in touch</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://github.com/AlexCorsega" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/alexcorsega-jr-178252253" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="mailto:corsegaalex@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="code-card">
+            <div class="code-card__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="code-card__file">developer.cs</span>
+            </div>
+            <pre class="code-card__body"><code><span class="c-key">public class</span> <span class="c-cls">Developer</span>
+{
+    <span class="c-key">public string</span> Name => <span class="c-str">"Alex Corsega"</span>;
+    <span class="c-key">public string</span> Role => <span class="c-str">"Full Stack Dev"</span>;
+    <span class="c-key">public string[]</span> Stack => <span class="c-key">new</span>[]
+    {
+        <span class="c-str">"C#"</span>, <span class="c-str">"ASP.NET Core"</span>, <span class="c-str">"Blazor"</span>,
+        <span class="c-str">".NET MAUI"</span>, <span class="c-str">"Azure"</span>, <span class="c-str">"SQL"</span>
+    };
+
+    <span class="c-key">public bool</span> ShipsEndToEnd => <span class="c-key">true</span>;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">01 — About</span>
+          <h2 class="section__title">Engineer who ships <span class="grad-text">complete</span> products.</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I'm a System &amp; Web Developer who specializes in full-stack development with hands-on
+              experience building production systems from the ground up. At <strong>Logicim</strong>, I helped
+              build a public-facing platform from scratch — authentication, role-based access, REST APIs,
+              payments, and reporting — and have been its sole developer for the past year, owning the
+              CI/CD pipeline and Azure infrastructure.
+            </p>
+            <p>
+              Beyond the web, I build cross-platform mobile apps with <strong>.NET MAUI</strong> and work daily
+              with AI-assisted development tools like GitHub Copilot and Claude Code. I care about clean
+              architecture, real-world reliability, and delivering solutions that go all the way from database
+              design to the front end.
+            </p>
+            <div class="about__edu">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <div>
+                <strong>B.S. in Information Technology</strong>
+                <span>PHINMA Cagayan de Oro College · System &amp; Web Development</span>
+              </div>
+            </div>
+          </div>
+          <ul class="about__highlights reveal">
+            <li><span class="hl-ico">⚡</span><div><strong>End-to-end delivery</strong><p>Database design, APIs, and front-end — one person, full pipeline.</p></div></li>
+            <li><span class="hl-ico">☁️</span><div><strong>Cloud &amp; DevOps</strong><p>Azure hosting and CI/CD with GitHub Actions, managed solo.</p></div></li>
+            <li><span class="hl-ico">🔐</span><div><strong>Secure by design</strong><p>Identity Server, OAuth, and role-based access across user types.</p></div></li>
+            <li><span class="hl-ico">📱</span><div><strong>Cross-platform</strong><p>.NET MAUI apps for Android &amp; iOS with strict MVVM.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">02 — Skills</span>
+          <h2 class="section__title">Tools &amp; technologies I <span class="grad-text">build with</span>.</h2>
+        </div>
+        <div class="skills__grid">
+          <article class="skill-card reveal">
+            <h3>Languages &amp; Frameworks</h3>
+            <div class="chips">
+              <span>C#</span><span>ASP.NET Core</span><span>.NET</span><span>Blazor</span>
+              <span>.NET MAUI</span><span>WPF</span><span>XAML / MVVM</span>
+              <span>JavaScript</span><span>TypeScript</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Backend &amp; APIs</h3>
+            <div class="chips">
+              <span>ASP.NET Web API</span><span>REST APIs</span><span>SignalR</span>
+              <span>Entity Framework &amp; LINQ</span><span>WCF &amp; SOAP</span>
+              <span>Identity Server &amp; OAuth</span><span>3rd-party API integration</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Data &amp; Cloud</h3>
+            <div class="chips">
+              <span>SQL Server</span><span>MySQL</span><span>Azure</span>
+              <span>Azure Blob Storage</span><span>CI/CD</span>
+              <span>GitHub Actions</span><span>Git</span><span>Serilog</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Front-end &amp; Tools</h3>
+            <div class="chips">
+              <span>HTML &amp; CSS</span><span>Tailwind</span><span>Bootstrap</span>
+              <span>Syncfusion</span><span>Mailchimp</span><span>Google Stitch</span>
+              <span>GitHub Copilot</span><span>Claude Code</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">03 — Experience</span>
+          <h2 class="section__title">Where I've <span class="grad-text">worked</span>.</h2>
+        </div>
+        <div class="timeline">
+          <article class="tl-item reveal">
+            <div class="tl-marker"></div>
+            <div class="tl-card">
+              <div class="tl-card__head">
+                <div>
+                  <h3>Full Stack Web Developer</h3>
+                  <p class="tl-company">Logicim</p>
+                </div>
+                <span class="tl-date">Sep 2023 — Present</span>
+              </div>
+              <ul class="tl-list">
+                <li>Built the public-facing website from scratch — first as a two-person team, then as sole developer for the past year.</li>
+                <li>Implemented authentication and role-based access control with Identity Server and OAuth across multiple user types.</li>
+                <li>Designed and managed the SQL Server database and developed REST APIs with ASP.NET Web API, including real-time features via SignalR.</li>
+                <li>Built payment / billing functionality and reporting dashboards, with media storage on Azure Blob Storage.</li>
+                <li>Integrated third-party services (Mailchimp), added structured logging with Serilog, and own the CI/CD pipeline and Azure hosting via GitHub Actions.</li>
+              </ul>
+              <div class="chips chips--mini">
+                <span>C#</span><span>ASP.NET Core</span><span>Blazor</span><span>Web API</span><span>SignalR</span><span>EF</span><span>Identity Server</span><span>Azure</span><span>SQL Server</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <div class="tl-marker"></div>
+            <div class="tl-card">
+              <div class="tl-card__head">
+                <div>
+                  <h3>Software Developer Intern</h3>
+                  <p class="tl-company">Fligno — Logbook</p>
+                </div>
+                <span class="tl-date">Jul — Sep 2023</span>
+              </div>
+              <ul class="tl-list">
+                <li>Built a Logbook application from scratch for use by security guards and organizations.</li>
+              </ul>
+              <div class="chips chips--mini">
+                <span>PHP</span><span>Laravel</span><span>React</span><span>Ionic</span><span>TypeScript</span><span>Google API</span><span>AWS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="section__cta reveal">
+          <a href="projects.html" class="btn btn--ghost">See selected projects →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Alex D. Corsega Jr.</span>
+      <span class="footer__made">Built with vanilla HTML, CSS &amp; JS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

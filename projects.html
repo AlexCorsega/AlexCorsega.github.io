@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Alex D. Corsega Jr.</title>
+  <meta name="description" content="Selected projects by Alex D. Corsega Jr. — FetchMobile, House Rental Web App, NJM Insurance System, and more." />
+
+  <meta property="og:title" content="Projects — Alex D. Corsega Jr." />
+  <meta property="og:description" content="Selected projects across web, mobile, and desktop." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='monospace'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">AC<span class="nav__brand-dot">.</span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="projects.html" data-page="projects">Projects</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn btn--sm btn--primary nav__cta">Let's talk</a>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page header -->
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="section__tag">Portfolio</span>
+        <h1 class="page-hero__title">Selected <span class="grad-text">Projects</span></h1>
+        <p class="page-hero__lede">
+          A mix of production platforms, client work, and personal builds — spanning web, mobile,
+          and desktop. Each one shipped end to end, from data model to interface.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--top">
+      <div class="container">
+        <div class="projects__grid">
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__badge project__badge--live">Production · Sole Dev</span>
+              <span class="project__year">2023 — Present</span>
+            </div>
+            <h3 class="project__title">Logicim</h3>
+            <p class="project__desc">
+              The public-facing platform I build and maintain as sole developer — authentication with Identity
+              Server &amp; OAuth, REST APIs, real-time SignalR features, payments/billing, reporting dashboards,
+              and media on Azure Blob Storage, all shipped through a GitHub Actions CI/CD pipeline.
+            </p>
+            <div class="chips chips--mini">
+              <span>ASP.NET Core</span><span>Blazor</span><span>Web API</span><span>SignalR</span><span>Identity Server</span><span>Azure</span><span>Serilog</span>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__badge project__badge--live">In Development</span>
+              <span class="project__year">2025 — Present</span>
+            </div>
+            <h3 class="project__title">FetchMobile <span>(Fetch CDO)</span></h3>
+            <p class="project__desc">
+              A cross-platform (Android &amp; iOS) courier and errand-service app built with .NET 9 MAUI,
+              architected with strict MVVM, compiled bindings, and Shell-based navigation. Features dependency
+              injection via Scrutor, a library of reusable custom controls, a theme-aware design system, and
+              secure token storage over HTTPS.
+            </p>
+            <div class="chips chips--mini">
+              <span>C# 13</span><span>.NET 9 MAUI</span><span>XAML</span><span>MVVM</span><span>CommunityToolkit.Mvvm</span><span>Scrutor</span>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__badge">Internship</span>
+              <span class="project__year">Jul — Sep 2023</span>
+            </div>
+            <h3 class="project__title">Fligno Logbook</h3>
+            <p class="project__desc">
+              A digital logbook application for security guards and organizations, built from scratch during my
+              internship — spanning web and mobile with a shared backend.
+            </p>
+            <div class="chips chips--mini">
+              <span>PHP</span><span>Laravel</span><span>React</span><span>Ionic</span><span>TypeScript</span><span>AWS</span>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__badge">Client Project</span>
+              <span class="project__year">Apr — May 2023</span>
+            </div>
+            <h3 class="project__title">NJM Insurance System</h3>
+            <p class="project__desc">
+              A car insurance management system for a company in Cagayan de Oro City. Implemented SMS
+              notifications via a GPRS modem, database-driven client records management, and automated
+              printable receipt generation.
+            </p>
+            <div class="chips chips--mini">
+              <span>C#</span><span>WPF</span><span>SQL Server</span><span>Entity Framework</span><span>GPRS Modem</span>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__badge">Capstone · Sole Dev</span>
+              <span class="project__year">2021 — 2023</span>
+            </div>
+            <h3 class="project__title">House Rental Web Application</h3>
+            <p class="project__desc">
+              A full-stack platform for boarding house listings, built single-handedly. Includes geolocation
+              search with map-radius filtering, role-based dashboards (admin, verifier, accountant), and
+              real-time chat between users.
+            </p>
+            <div class="chips chips--mini">
+              <span>C#</span><span>ASP.NET MVC</span><span>JavaScript</span><span>SignalR</span><span>EF</span><span>ASP.NET API</span><span>Google API</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__cta reveal">
+          <p class="section__cta-text">Want to see more or talk through any of these?</p>
+          <a href="contact.html" class="btn btn--primary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Alex D. Corsega Jr.</span>
+      <span class="footer__made">Built with vanilla HTML, CSS &amp; JS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
