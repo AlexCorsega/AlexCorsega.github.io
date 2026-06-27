@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio built with vanilla **HTML, CSS, and JavaScript** — no build step, no dependencies. Designed to be hosted for free on **GitHub Pages**.
 
-🔗 **Live site:** `https://AlexCorsega.github.io/<repo-name>/`
+🔗 **Live site:** **[alexcorsega.github.io](https://alexcorsega.github.io/)**
 
 ## Pages
 
@@ -21,19 +21,21 @@ A modern, responsive personal portfolio built with vanilla **HTML, CSS, and Java
 - ♿ Respects `prefers-reduced-motion`
 - 📨 Working contact form via [FormSubmit](https://formsubmit.co) (no backend needed)
 
-## Deploy to GitHub Pages
+## Hosting
 
-1. Create a new repository on GitHub (e.g. `portfolio`).
-2. Push this folder to it:
-   ```bash
-   git remote add origin https://github.com/AlexCorsega/portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. On GitHub: **Settings → Pages → Source → Deploy from a branch**, pick `main` / `root`, and save.
-4. Your site goes live at `https://AlexCorsega.github.io/portfolio/` within a minute.
+This site is hosted on **GitHub Pages** from the [`AlexCorsega.github.io`](https://github.com/AlexCorsega/AlexCorsega.github.io) repository, which publishes automatically at the root domain: **https://alexcorsega.github.io/**
 
-> Tip: To host at `https://AlexCorsega.github.io` directly (no sub-path), name the repo `AlexCorsega.github.io`.
+### Updating the live site
+
+Any push to the `main` branch redeploys automatically within a minute:
+
+```bash
+git add -A
+git commit -m "describe your change"
+git push
+```
+
+> The repo is named `AlexCorsega.github.io` (username + `.github.io`) — that exact name is what makes GitHub serve it at the root URL with no sub-path.
 
 ## SEO
 
