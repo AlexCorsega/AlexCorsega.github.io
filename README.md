@@ -40,7 +40,7 @@ A modern, responsive personal portfolio built with vanilla **HTML, CSS, and Java
 This site is built to rank. It ships with:
 
 - Unique `<title>` + meta description per page, and a canonical URL on each
-- Full **Open Graph** + **Twitter Card** tags with a 1200×630 share image (`og-image.png`)
+- Full **Open Graph** + **Twitter Card** tags with a 1200×630 share image (`assets/og-image.png`)
 - **JSON-LD structured data** — `Person` + `WebSite` on the home page, `BreadcrumbList` on Projects, `ContactPage` on Contact
 - `robots.txt` and `sitemap.xml` (update the `<lastmod>` dates when you change content)
 - Semantic HTML, descriptive `alt`/`aria-label`s, and fast, dependency-free loading
@@ -52,12 +52,12 @@ This site is built to rank. It ships with:
 3. **Test the rich results** with the [Rich Results Test](https://search.google.com/test/rich-results) and validate the social card with the [Meta Sharing Debugger](https://developers.facebook.com/tools/debug/) / [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/).
 4. **Build backlinks** — put the URL in your GitHub profile/bio, LinkedIn, and résumé. Inbound links are the single biggest ranking factor for a new personal site.
 
-> If you regenerate the share image, keep it named `og-image.png` at 1200×630 (or update the URLs in each page's `<head>`).
+> If you regenerate the share image, keep it at `assets/og-image.png`, 1200×630 (or update the URLs in each page's `<head>`).
 
 ## Customize
 
 - **Content** lives directly in the `.html` files.
-- **Colors / theme** are CSS variables at the top of `styles.css` (`:root` and `[data-theme="light"]`).
+- **Colors / theme** are CSS variables at the top of `assets/styles.css` (`:root` and `[data-theme="light"]`).
 - **Contact form** posts to `corsegaalex@gmail.com` — update the `action` in `contact.html` to change the recipient. The first submission triggers a one-time email confirmation from FormSubmit.
 
 ## Tech
