@@ -35,6 +35,25 @@ A modern, responsive personal portfolio built with vanilla **HTML, CSS, and Java
 
 > Tip: To host at `https://AlexCorsega.github.io` directly (no sub-path), name the repo `AlexCorsega.github.io`.
 
+## SEO
+
+This site is built to rank. It ships with:
+
+- Unique `<title>` + meta description per page, and a canonical URL on each
+- Full **Open Graph** + **Twitter Card** tags with a 1200×630 share image (`og-image.png`)
+- **JSON-LD structured data** — `Person` + `WebSite` on the home page, `BreadcrumbList` on Projects, `ContactPage` on Contact
+- `robots.txt` and `sitemap.xml` (update the `<lastmod>` dates when you change content)
+- Semantic HTML, descriptive `alt`/`aria-label`s, and fast, dependency-free loading
+
+### After you deploy — do these once to get indexed
+
+1. **Google Search Console** → [search.google.com/search-console](https://search.google.com/search-console): add `https://alexcorsega.github.io/`, verify (the HTML-tag method is easiest), then **Sitemaps → submit** `sitemap.xml`. Use **URL Inspection → Request indexing** on the home page to speed things up.
+2. **Bing Webmaster Tools** → [bing.com/webmasters](https://www.bing.com/webmasters): same idea (you can import directly from Google).
+3. **Test the rich results** with the [Rich Results Test](https://search.google.com/test/rich-results) and validate the social card with the [Meta Sharing Debugger](https://developers.facebook.com/tools/debug/) / [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/).
+4. **Build backlinks** — put the URL in your GitHub profile/bio, LinkedIn, and résumé. Inbound links are the single biggest ranking factor for a new personal site.
+
+> If you regenerate the share image, keep it named `og-image.png` at 1200×630 (or update the URLs in each page's `<head>`).
+
 ## Customize
 
 - **Content** lives directly in the `.html` files.
